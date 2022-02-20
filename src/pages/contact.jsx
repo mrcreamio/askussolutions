@@ -57,7 +57,6 @@ const NotFound = () => (
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
 
             </textarea>
-            <Button type="submit" mr={2}>Submit</Button>
             </form>
             <Themed.p>
               Go back to <Link to="/">homepage</Link>.
