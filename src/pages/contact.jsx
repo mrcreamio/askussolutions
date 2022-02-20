@@ -46,7 +46,11 @@ const NotFound = () => (
         <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={0} factor={1}>
           <Inner>
             <Themed.h1>contact Us</Themed.h1>
-            <textarea name="input" id="input" cols="30" rows="10">Your Name</textarea>
+            <form action="https://getform.io/f/052f7789-3134-4a48-ba25-4e08dde72f36" method="post">
+                <input type="text" />
+                <input type="email" name="email" id="" />
+                <input type="text" name="Query" id="" />
+            </form>
             <Themed.p>
               Go back to <Link to="/">homepage</Link>.
             </Themed.p>
