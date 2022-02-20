@@ -50,6 +50,7 @@ const NotFound = () => (
                 <input type="text" />
                 <input type="email" name="email" id="" />
                 <input type="text" name="Query" id="" />
+                <button type="submit">Submit</button>
             </form>
             <Themed.p>
               Go back to <Link to="/">homepage</Link>.
