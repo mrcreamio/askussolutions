@@ -9,7 +9,7 @@ import Svg from "@lekoarts/gatsby-theme-cara/src/components/svg"
 import Seo from "@lekoarts/gatsby-theme-cara/src/components/seo"
 import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
-
+import { Button } from 'theme-ui'
 const NotFound = () => (
   <Layout>
     <Seo title="404 - Not Found" />
@@ -47,10 +47,17 @@ const NotFound = () => (
           <Inner>
             <Themed.h1>contact Us</Themed.h1>
             <form action="https://getform.io/f/052f7789-3134-4a48-ba25-4e08dde72f36" method="post">
-                <input type="text" />
-                <input type="email" name="email" id="" />
-                <input type="text" name="Query" id="" />
-                <button type="submit">Submit</button>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
+
+            </textarea>
+            <Button type="submit" mr={2}>Submit</Button>
             </form>
             <Themed.p>
               Go back to <Link to="/">homepage</Link>.
