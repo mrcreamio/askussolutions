@@ -47,7 +47,9 @@ const NotFound = () => (
           <Inner>
             <Themed.h1>contact Us</Themed.h1>
             <form action="https://getform.io/f/052f7789-3134-4a48-ba25-4e08dde72f36" method="post">
-            <Input defaultValue="Your Name" />
+            <Input type="text" name="Name"  />
+            <br />
+            <Input name="email" type="email"  />
             <Button type="submit" mr={2}>Submit</Button>
             </form>
             <Themed.p>
